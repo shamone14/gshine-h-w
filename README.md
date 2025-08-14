@@ -312,7 +312,7 @@ body.dark {
       <button type="button" class="cart" onclick="orderNow('Mixer Tap')">Add to Cart</button>
     </div>
     <div class="product" data-category="Taps" data-name="Sink Tap">
-      <img src="https://i.imgur.com/qC1kUS1.jpeg" alt="Sink Tap" onclick="openModal(this)">
+      <img src="sink.jpg" alt="Sink Tap" onclick="openModal(this)">
       <div>Sink Tap</div>
       <div class="price">KSh 800</div>
       <button type="button" class="cart" onclick="orderNow('Sink Tap')">Add to Cart</button>
