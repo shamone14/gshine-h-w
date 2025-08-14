@@ -430,8 +430,8 @@ body.dark {
 <!-- Theme Switcher -->
 <div class="theme-switcher">
   <span>Theme:</span>
-  <button id="theme-light" onclick="setTheme('light')">Light</button>
-  <button id="theme-dark" onclick="setTheme('dark')">Dark</button>
+  <button id="light" onclick="setTheme('light')">Light</button>
+  <button id="dark" onclick="setTheme('dark')">Dark</button>
 </div>
 
 <script>
