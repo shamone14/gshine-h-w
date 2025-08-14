@@ -293,15 +293,11 @@ body.dark {
 <!-- PRODUCT LIST -->
 <div class="product-list-container">
   <div class="products" id="product-list">
-   <div class="product" 
-     data-id="P001"
-     data-category="Plumbing" 
-     data-name="Waste Pipe 4&quot; (GB) Heavy"
-     data-price="1200">
+    <div class="product" data-category="Plumbing" data-name="Waste Pipe 4&quot; (GB) Heavy">
       <img src="https://raw.githubusercontent.com/Amuya12/bannerimage/main/WASTE_PIPE_4__(GB)_HEAVY%5B1%5D.jpeg" alt="Waste Pipe 4&quot;" onclick="openModal(this)">
       <div>Waste Pipe 4" (GB) Heavy</div>
       <div class="price">KSh 1200</div>
-      <button type="button" class="cart" <button onclick="orderNow('P001')">Add to Cart</button>
+      <button type="button" class="cart" onclick="orderNow('Waste Pipe 4&quot; (GB) Heavy')">Add to Cart</button>
     </div>
     <div class="product" data-category="Plumbing" data-name="Brass Tap">
       <img src="https://raw.githubusercontent.com/Amuya12/bannerimage/main/brass-tap.jpg" alt="Brass Tap" onclick="openModal(this)">
@@ -547,29 +543,26 @@ document.getElementById('imgModal').onclick = function(e) {
 // --- CART FUNCTIONALITY START ---
 let cart = [];
 
-function orderNow(productId) {
-  // Find the product HTML element by ID
-  const productElement = document.querySelector(`.product[data-id="${productId}"]`);
-  if (!productElement) return;
+function orderNow(productName) {
+  let productEl = null;
+  document.querySelectorAll('.product').forEach(el => {
+    const name = el.querySelector('div:nth-child(2)').textContent.trim();
+    if (name === productName) productEl = el;
+  });
+  if (!productEl) return;
+  const priceText = productEl.querySelector('.price').textContent.replace(/[^\d]/g, '');
+  const price = parseInt(priceText, 10);
 
-  // Read its name and price from attributes
-  const name = productElement.getAttribute('data-name');
-  const price = parseFloat(productElement.getAttribute('data-price'));
-
-  // Get cart from localStorage
-  let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-  // If item is already in cart, just increase quantity
-  const existing = cart.find(item => item.id === productId);
+  const existing = cart.find(item => item.name === productName);
   if (existing) {
-    existing.quantity++;
+    existing.quantity += 1;
   } else {
-    cart.push({ id: productId, name, price, quantity: 1 });
+    cart.push({
+      name: productName,
+      quantity: 1,
+      price: price
+    });
   }
-
-  // Save cart
-  localStorage.setItem('cart', JSON.stringify(cart));
-}
   updateCartUI();
   document.getElementById('cart-panel').style.display = 'block';
 }
