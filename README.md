@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -69,6 +68,70 @@ h1 {margin: 0; font-size: 2rem; padding: 0.5rem;}
   width: 100%;
   text-align: center;
   margin: 1em 0 0.5em 0;
+}
+
+/* Product animation styles */
+.product-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.product-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="G-Shine Hardware">
+  <h1>G-Shine Hardware</h1>
+  <p class="tagline">Your one-stop hardware shop</p>
+</header>
+
+<div class="search-container">
+  <input type="text" placeholder="Search products...">
+</div>
+
+<div class="products">
+  <div class="product-card">
+    <img src="hammer.jpg" alt="Hammer">
+    <h3>Hammer</h3>
+    <p>Strong steel hammer for construction work.</p>
+  </div>
+  <div class="product-card">
+    <img src="screwdriver.jpg" alt="Screwdriver">
+    <h3>Screwdriver</h3>
+    <p>Durable screwdriver for all your DIY needs.</p>
+  </div>
+  <div class="product-card">
+    <img src="wrench.jpg" alt="Wrench">
+    <h3>Wrench</h3>
+    <p>Adjustable wrench with comfortable grip.</p>
+  </div>
+  <!-- Add more product-card divs here -->
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll('.product-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  cards.forEach(card => observer.observe(card));
+});
+</script>
+
+</body>
+</html>
 }
 .category-filter {
   display: inline-block;
@@ -279,7 +342,7 @@ body.dark {
 <!-- CATEGORY FILTERS -->
 <div class="category-filter-container">
   <button class="category-filter active" onclick="filterCategory('All')">All</button>
-  <button class="category-filter" onclick="filterCategory('Plumbing')">Plumbing</button>
+  <button class="category-filter" onclick="filterCategory('Plumbing materals')">Plumbing</button>
   <button class="category-filter" onclick="filterCategory('Taps')">Taps</button>
   <button class="category-filter" onclick="filterCategory('Locks & Hinges')">Locks & Hinges</button>
   <button class="category-filter" onclick="filterCategory('Electrical')">Electrical</button>
