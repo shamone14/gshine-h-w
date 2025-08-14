@@ -295,7 +295,7 @@ body.dark {
   <div class="products" id="product-list">
     <div class="product" data-category="Plumbing" data-name="Waste Pipe 4&quot; (GB) Heavy">
       <img src="https://raw.githubusercontent.com/Amuya12/bannerimage/main/WASTE_PIPE_4__(GB)_HEAVY%5B1%5D.jpeg" alt="Waste Pipe 4&quot;" onclick="openModal(this)">
-      <div>Waste Pipe 4" (GB) Heavy</div>
+      <div>Waste Pipe 4" Heavy</div>
       <div class="price">KSh 1200</div>
       <button type="button" class="cart" onclick="orderNow('Waste Pipe 4&quot; (GB) Heavy')">Add to Cart</button>
     </div>
