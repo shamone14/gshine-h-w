@@ -293,8 +293,6 @@ body.dark {
 <!-- PRODUCT LIST -->
 <div class="product-list-container">
   <div class="products" id="product-list">
-    <!-- ... your product blocks ... -->
-    <!-- (keep all existing product entries here) -->
     <div class="product" data-category="Plumbing" data-name="Waste Pipe 4&quot; (GB) Heavy">
       <img src="https://raw.githubusercontent.com/Amuya12/bannerimage/main/WASTE_PIPE_4__(GB)_HEAVY%5B1%5D.jpeg" alt="Waste Pipe 4&quot;" onclick="openModal(this)">
       <div>Waste Pipe 4" (GB) Heavy</div>
@@ -307,7 +305,96 @@ body.dark {
       <div class="price">KSh 500</div>
       <button type="button" class="cart" onclick="orderNow('Brass Tap')">Add to Cart</button>
     </div>
-    <!-- ... (rest of your products) ... -->
+    <div class="product" data-category="Taps" data-name="Mixer Tap">
+      <img src="https://i.imgur.com/zZ7GvKX.jpeg" alt="Mixer Tap" onclick="openModal(this)">
+      <div>Mixer Tap</div>
+      <div class="price">KSh 1500</div>
+      <button type="button" class="cart" onclick="orderNow('Mixer Tap')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Taps" data-name="Sink Tap">
+      <img src="https://i.imgur.com/qC1kUS1.jpeg" alt="Sink Tap" onclick="openModal(this)">
+      <div>Sink Tap</div>
+      <div class="price">KSh 800</div>
+      <button type="button" class="cart" onclick="orderNow('Sink Tap')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Locks & Hinges" data-name="Padlock">
+      <img src="https://i.imgur.com/TK1Bfjq.jpeg" alt="Padlock" onclick="openModal(this)">
+      <div>Padlock</div>
+      <div class="price">KSh 600</div>
+      <button type="button" class="cart" onclick="orderNow('Padlock')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Locks & Hinges" data-name="Door Hinges">
+      <img src="https://i.imgur.com/UG2RL6Q.jpeg" alt="Door Hinges" onclick="openModal(this)">
+      <div>Door Hinges</div>
+      <div class="price">KSh 400</div>
+      <button type="button" class="cart" onclick="orderNow('Door Hinges')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Electrical" data-name="LED Bulb">
+      <img src="https://i.imgur.com/FZNRjnp.jpeg" alt="LED Bulb" onclick="openModal(this)">
+      <div>LED Bulb</div>
+      <div class="price">KSh 250</div>
+      <button type="button" class="cart" onclick="orderNow('LED Bulb')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Electrical" data-name="Extension Cable">
+      <img src="https://i.imgur.com/E2S5ch6.jpeg" alt="Extension Cable" onclick="openModal(this)">
+      <div>Extension Cable</div>
+      <div class="price">KSh 1200</div>
+      <button type="button" class="cart" onclick="orderNow('Extension Cable')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Tiles" data-name="Floor Tile">
+      <img src="https://i.imgur.com/6rIYm9U.jpeg" alt="Floor Tile" onclick="openModal(this)">
+      <div>Floor Tile</div>
+      <div class="price">KSh 950</div>
+      <button type="button" class="cart" onclick="orderNow('Floor Tile')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Tiles" data-name="Wall Tile">
+      <img src="https://i.imgur.com/mvS7f4Q.jpeg" alt="Wall Tile" onclick="openModal(this)">
+      <div>Wall Tile</div>
+      <div class="price">KSh 700</div>
+      <button type="button" class="cart" onclick="orderNow('Wall Tile')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Granite & Marble" data-name="Granite Slab">
+      <img src="https://i.imgur.com/tXpmRcd.jpeg" alt="Granite Slab" onclick="openModal(this)">
+      <div>Granite Slab</div>
+      <div class="price">KSh 5500</div>
+      <button type="button" class="cart" onclick="orderNow('Granite Slab')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Granite & Marble" data-name="Marble Slab">
+      <img src="https://i.imgur.com/GF6k64n.jpeg" alt="Marble Slab" onclick="openModal(this)">
+      <div>Marble Slab</div>
+      <div class="price">KSh 6000</div>
+      <button type="button" class="cart" onclick="orderNow('Marble Slab')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Gypsum" data-name="Gypsum Board">
+      <img src="https://i.imgur.com/gJSpZ0r.jpeg" alt="Gypsum Board" onclick="openModal(this)">
+      <div>Gypsum Board</div>
+      <div class="price">KSh 1500</div>
+      <button type="button" class="cart" onclick="orderNow('Gypsum Board')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Paints" data-name="White Paint (20L)">
+      <img src="https://i.imgur.com/3tX8USy.jpeg" alt="White Paint" onclick="openModal(this)">
+      <div>White Paint (20L)</div>
+      <div class="price">KSh 3500</div>
+      <button type="button" class="cart" onclick="orderNow('White Paint (20L)')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Paints" data-name="Blue Paint (20L)">
+      <img src="https://i.imgur.com/RPZ14Oa.jpeg" alt="Blue Paint" onclick="openModal(this)">
+      <div>Blue Paint (20L)</div>
+      <div class="price">KSh 3700</div>
+      <button type="button" class="cart" onclick="orderNow('Blue Paint (20L)')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Tools" data-name="Hammer">
+      <img src="https://i.imgur.com/pCkqHGY.jpeg" alt="Hammer" onclick="openModal(this)">
+      <div>Hammer</div>
+      <div class="price">KSh 450</div>
+      <button type="button" class="cart" onclick="orderNow('Hammer')">Add to Cart</button>
+    </div>
+    <div class="product" data-category="Tools" data-name="Screwdriver Set">
+      <img src="https://i.imgur.com/R4wbpKN.jpeg" alt="Screwdriver Set" onclick="openModal(this)">
+      <div>Screwdriver Set</div>
+      <div class="price">KSh 900</div>
+      <button type="button" class="cart" onclick="orderNow('Screwdriver Set')">Add to Cart</button>
+    </div>
   </div>
   <!-- Pager Controls -->
   <div id="pager-controls" style="text-align:center; margin:2em 0 1em 0; display:none;">
@@ -552,7 +639,7 @@ function checkoutCart() {
 // --- CART FUNCTIONALITY END ---
 
 // --- PAGINATION LOGIC ---
-const MAX_ITEMS_PER_PAGE = 4; // <---- Show 4 items per page for preview!
+const MAX_ITEMS_PER_PAGE = 20;
 let currentPage = 1;
 
 function getActiveCategory() {
