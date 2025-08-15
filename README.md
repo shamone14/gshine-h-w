@@ -300,7 +300,7 @@ body.dark {
       <button type="button" class="cart" onclick="orderNow('Waste Pipe 4&quot; (GB) Heavy')">Add to Cart</button>
     </div>
     <div class="product" data-category="Plumbing" data-name="Brass Tap">
-      <img src="https://raw.githubusercontent.com/Amuya12/bannerimage/main/brass-tap.jpg" alt="Brass Tap" onclick="openModal(this)">
+      <img src="Lincy-brass-lock-900-300x300.jpg" alt="Brass Tap" onclick="openModal(this)">
       <div>Brass Tap</div>
       <div class="price">KSh 500</div>
       <button type="button" class="cart" onclick="orderNow('Brass Tap')">Add to Cart</button>
